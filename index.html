@@ -1,98 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Mireille Irafasha</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
+  <!-- Navbar -->
+  <header>
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">Mimi</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+      <div class="container">
+        <a href="#" class="logo">AboutMe.</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Hi👋, I'm Marie Mireille Irafasha</h1>
-                <p>A passionate <strong>Backend Developer</strong> dedicated to building scalable and efficient solutions that empower businesses and communities. I specialize in creating innovative systems that address real-world challenges.</p>
-                <a href="#contact" class="btn">Hire Me</a>
-            </div>
-            <div class="hero-image">
-                <img src="assets/mimi.jpg" alt="Profile Picture">
-            </div>
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, Welcome</h1>
+        <h2>I’m Mireille Irafasha</h2>
+        <div class="hero-paragraph"><p>A passionate Backend Developer specializing in building robust, scalable, and secure systems,<br />
+            With expertise in Node.js, TypeORM, Docker, and database management, I bring backend solutions to life.</div>
+        </p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/mimi.jpg" alt="Mireille Irafasha">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/mimi.jpg" alt="Mireille Irafasha">
         </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <p>I have expertise in the following technologies:</p>
-            <div class="skill-icons">
-                <img src="assets/html5.png" alt="HTML 5">
-                <img src="assets/css1.png" alt="CSS 3">
-                <img src="assets/javascript1.png" alt="JavaScript">
-                <img src="assets/nodejs.png" alt="Node.js" class="nodejs">
-            </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I am a Backend Developer with experience in Node.js, MongoDB, and TypeORM. I have also worked as a Scrum Master and managed a catering service business.</p>
+          <a href="#contact" class="btn">Contact Me</a>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <p>A select number of projects:</p>
-            <div class="project-list">
-                <div class="project">
-                    <img src="projects/project1.png" alt="Project 1">
-                    <h3>Social Media Manager</h3>
-                    <p>Made using HTML, CSS, and JS</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <div class="project">
-                    <img src="projects/project2.png" alt="Project 2">
-                    <h3>Simple Card Design</h3>
-                    <p>Made using HTML & CSS</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-                <div class="project">
-                    <img src="projects/project3.png" alt="Project 3">
-                    <h3>IP Address Tracking</h3>
-                    <p>Made with JS and APIs</p>
-                    <a href="#" class="btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Mimi Portfolio. All Rights Reserved.</p>
-            <div class="social-links">
-                <a href="#">Twitter</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
