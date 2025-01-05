@@ -283,6 +283,154 @@ header {
   line-height: 1.6;
 }
 
+/* Portfolio Section */
+#portfolio {
+  background-color: #000;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#portfolio .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+#portfolio .section-title span {
+  color: #e4e4e4;
+}
+
+#portfolio .section-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.portfolio-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.portfolio-item {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.portfolio-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.portfolio-item:hover .overlay {
+  opacity: 1;
+}
+
+.portfolio-item .overlay h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.portfolio-item .overlay p {
+  font-size: 14px;
+  color: #ddd;
+}
+
+/* Certificates Section */
+#certificates {
+  background-color: #0b1120;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#certificates .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+#certificates .section-title span {
+  color: #e4e4e4;
+}
+
+#certificates .section-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.certificates-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certificate-item {
+  background-color: #1c1f26;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.certificate-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.certificate-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.certificate-item p {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+
+
 
   
 
