@@ -216,5 +216,73 @@ header {
   .btn:hover {
     background-color: #e08d00;
   }
+
+  /* Service Section */
+#services {
+  background-color: #0b1120;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+#services .section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffc107;
+  margin-bottom: 10px;
+}
+
+#services .section-title span {
+  color: #e4e4e4;
+}
+
+#services .section-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #aaa;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #000;
+  border: 2px solid #222;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.card .icon {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffc107;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.card p {
+  font-size: 14px;
+  color: #5a5757;
+  line-height: 1.6;
+}
+
+
   
 
