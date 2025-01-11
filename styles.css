@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background-color: #121212;
+    background-color: #000;
   }
   
   a {
@@ -148,6 +148,7 @@ header {
     max-width: 400px;
     height: auto;
     border-radius: 10px;
+    margin-right:80px ;
   }
   .hero-content .hero-text .hero-paragraph
   {
@@ -223,6 +224,7 @@ header {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  width: 100%;
 }
 
 #services .section-title {
@@ -407,7 +409,7 @@ header {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  width: 300px;
+  width: 200px;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -428,6 +430,210 @@ header {
   color: #ddd;
   line-height: 1.5;
 }
+
+#certificate .container{
+  display: flex;
+}
+
+/* Contact Us Section */
+#contact-us {
+  padding: 50px 20px;
+  background-color: #000; /* Matches overall theme */
+}
+
+#contact-us h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+#contact-us p {
+  margin: 10px 0 30px;
+  color: #aaa;
+}
+
+.contact-details{
+  margin-left: 200px;
+  font-size: 1rem;
+}
+.contact-details span{
+color: #ffc107;
+}
+.insp_content{
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-form button {
+  background-color: #ffc107;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #ffc107;
+}
+
+/* Footer Section */
+#footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #0b1120;
+  width: 100%;
+}
+
+#footer h3 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+#footer p {
+  margin: 10px 0;
+  color: #aaa;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: #ffc107;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #1cca42;
+}
+.contact-formM
+{
+  display: flex;
+}
+.contactFormandButton
+{
+  margin-left: 100px;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .hero-text h2 {
+    font-size: 24px;
+  }
+
+  .hero-image img {
+    width: 80%; /* Resize image */
+    height: auto;
+  }
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* Hide menu items initially */
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+  
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  .navbar .logoword {
+    font-size: 18px; /* Smaller font size for mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolio-gallery {
+    grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+  }
+
+  .portfolio-item img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .social-icons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social-icons a {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-details,
+  .contact-formM {
+    width: 100%;
+  }
+}
+
 
 
 
