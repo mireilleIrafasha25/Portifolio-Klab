@@ -548,89 +548,73 @@ color: #ffc107;
   }
 
   .hero-image img {
-    width: 80%; /* Resize image */
+    width: 60%; /* Resize image */
     height: auto;
   }
 }
 
-/* For smaller screens */
-@media (max-width: 768px) {
+
+/* Smartphones */
+@media (max-width: 576px) {
+  .hero-section {
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
+  }
+
   .nav-links {
-    display: none; /* Hide menu items initially */
     flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    left: 0;
-  }
-  
-  .navbar.active .nav-links {
-    display: flex;
+    gap: 10px;
   }
 
-  .navbar .logoword {
-    font-size: 18px; /* Smaller font size for mobile */
+  .card,
+  .portfolio-item,
+  .certificate-item {
+    flex: 1 1 100%;
   }
 }
 
-@media (max-width: 768px) {
-  .about-section {
-    flex-direction: column;
+/* Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-text,
+  .hero-image {
+    flex: 1 1 100%;
   }
 
-  .about-content {
-    text-align: center;
-  }
-
-  .about-image img {
-    width: 100%;
-    max-width: 300px;
-  }
-}
-
-@media (max-width: 768px) {
-  .service-cards {
-    flex-direction: column;
-  }
-
-  .card {
-    width: 100%;
-    margin-bottom: 20px;
+  .card,
+  .portfolio-item,
+  .certificate-item {
+    flex: 1 1 calc(50% - 20px);
   }
 }
 
-@media (max-width: 768px) {
-  .portfolio-gallery {
-    grid-template-columns: 1fr 1fr; /* Two columns for smaller screens */
+/* Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-text,
+  .hero-image {
+    flex: 1 1 50%;
   }
 
-  .portfolio-item img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (max-width: 768px) {
-  .social-icons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .social-icons a {
-    margin-bottom: 10px;
+  .card,
+  .portfolio-item,
+  .certificate-item {
+    flex: 1 1 calc(33.333% - 20px);
   }
 }
 
-@media (max-width: 768px) {
-  .contact-us {
-    flex-direction: column;
-    text-align: center;
+/* Desktops */
+@media (min-width: 1025px) {
+  .hero-content {
+    flex-wrap: nowrap;
   }
 
-  .contact-details,
-  .contact-formM {
-    width: 100%;
+  .card,
+  .portfolio-item,
+  .certificate-item {
+    flex: 1 1 calc(25% - 20px);
   }
 }
 
