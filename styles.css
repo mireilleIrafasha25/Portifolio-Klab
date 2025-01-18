@@ -5,6 +5,7 @@ body {
     padding: 0;
     color: #fff;
     background-color: #000;
+    width: 100%;
   }
   
   a {
@@ -54,7 +55,7 @@ body {
   }
   
   .nav-links li a {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: normal;
     color: #fff;
     transition: color 0.3s ease;
@@ -136,6 +137,7 @@ header {
   .hero-text p {
     font-size: 18px;
     margin: 20px 0;
+    
   }
   
   .hero-content .hero-image {
@@ -378,6 +380,7 @@ header {
   color: white;
   padding: 60px 20px;
   text-align: center;
+  width: 100%;
 }
 
 #certificates .section-title {
@@ -435,6 +438,7 @@ header {
   display: flex;
 }
 
+
 /* Contact Us Section */
 #contact-us {
   padding: 50px 20px;
@@ -471,7 +475,7 @@ color: #ffc107;
 
 .contact-form input,
 .contact-form textarea {
-  width: 90%;
+  width: 100%;
   max-width: 500px;
   padding: 10px;
   margin: 10px 0;
@@ -542,13 +546,16 @@ color: #ffc107;
     flex-direction: column;
     text-align: center;
   }
+  .container{
+    width: 100%;
+  }
   
   .hero-text h2 {
     font-size: 24px;
   }
 
   .hero-image img {
-    width: 60%; /* Resize image */
+    width: 80%; /* Resize image */
     height: auto;
   }
 }
@@ -558,6 +565,7 @@ color: #ffc107;
 @media (max-width: 576px) {
   .hero-section {
     text-align: center;
+    width: 100%;
   }
 
   .hero-text,
@@ -617,6 +625,45 @@ color: #ffc107;
     flex: 1 1 calc(25% - 20px);
   }
 }
+
+.hero-section .hero-content .hero-text .hello{
+  font-size: 1.2em;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease forwards;
+}
+.hero-section .hero-content .hero-text h2
+{
+  font-size: 1.2em;
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeInUp 5s ease forwards;
+}
+.hero-section .hero-content .hero-text .hero-paragraph
+{
+  font-size: 1.2em;
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeInUp 15s ease forwards;
+}
+.hero-section .hero-content .hero-text .btn
+{
+  font-size: 1.2em;
+  opacity: 1;
+  transform: translateY(20px);
+  animation: fadeInUp 5s ease forwards;
+}
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
 
 
 
