@@ -50,3 +50,24 @@ const headerLogoConatiner = document.querySelector(".header__logo-container");
 headerLogoConatiner.addEventListener("click", () => {
   location.href = "index.html";
 });
+
+// Get all links and sections
+const navLinks = document.querySelectorAll(".nav-links a");
+const sections = document.querySelectorAll(".content-section");
+
+// Function to handle switching sections
+function switchSection(event) {
+  event.preventDefault(); // Prevent default link behavior
+
+  // Hide all sections
+  sections.forEach((section) => section.classList.add("hidden"));
+
+  // Show the section related to the clicked link
+  const targetSection = document.getElementById(event.target.dataset.section);
+  targetSection.classList.remove("hidden");
+}
+
+// Add event listener to all nav links
+navLinks.forEach((link) => {
+  link.addEventListener("click", switchSection);
+});
